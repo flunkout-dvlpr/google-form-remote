@@ -7,8 +7,9 @@ julio = Button(16)
 miguel = Button(20)
 pedro = Button(21)
 
-while hotSwitch.is_active == True:
-  print('HotSwitch')
+while True:
+  while hotSwitch.is_active == True:
+    print('HotSwitch')
 # if clockInOut.is_active == True and julio.is_pressed:
 #   print('Julio clockIn')
 # if clockInOut.is_active == True and miguel.is_pressed:
