@@ -9,6 +9,7 @@ pedro = Button(21)
 
 state = False
 def toggle(state):
+  print('Switch toggled')
   if state == False:
     state = True
   else:
