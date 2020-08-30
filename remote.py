@@ -14,9 +14,10 @@ clockInOut = Button(19)
 julio = Button(16)
 miguel = Button(20)
 pedro = Button(21)
-clockInOut.when_pressed = toggle(state)
 while True:
   while hotSwitch.is_active == True:
+    if clockInOut.is_pressed:
+      toggle(state)
     print('Current state', state)
 # if clockInOut.is_active == True and julio.is_pressed:
 #   print('Julio clockIn')
