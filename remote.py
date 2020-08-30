@@ -10,9 +10,19 @@ pedro = Button(21)
 while True:
   if True:
     if clockInOut.value is True:
-      #googleForm.submitClockIn('Julio')
-      print('clockIn')
+      if julio.is_pressed:
+        print('Julio clockIn')
+      if miguel.is_pressed:
+        print('Miguel clockIn')
+      if pedro.is_pressed:
+        print('Pedro clockIn')
 
     elif clockInOut.value is False:
       #googleForm.submitClockOut('Julio')
-      print('clockOut')
+      if julio.is_pressed:
+        print('Julio clockOut')
+      if miguel.is_pressed:
+        print('Miguel clockOut')
+      if pedro.is_pressed:
+        print('Pedro clockOut')
+
