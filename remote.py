@@ -15,7 +15,7 @@ def toggle(state):
     state = False
 while True:
   while hotSwitch.is_active == True:
-    clockInOut.when_pressed(toggle(state))
+    clockInOut.when_pressed = toggle(state)
     print('Current state', state)
 # if clockInOut.is_active == True and julio.is_pressed:
 #   print('Julio clockIn')
