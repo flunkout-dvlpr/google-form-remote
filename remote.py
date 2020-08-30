@@ -16,6 +16,7 @@ while True:
         print('Miguel clockIn')
       if pedro.is_pressed:
         print('Pedro clockIn')
+      print('idle')
 
     elif clockInOut.value is False:
       #googleForm.submitClockOut('Julio')
@@ -25,4 +26,5 @@ while True:
         print('Miguel clockOut')
       if pedro.is_pressed:
         print('Pedro clockOut')
+      print('idle')
 
