@@ -2,7 +2,7 @@ from gpiozero import Button
 import googleForm 
 
 state = False
-def toggle(state):
+def toggle():
   print('Switch toggled')
   if state == False:
     state = True
@@ -14,7 +14,7 @@ clockInOut = Button(19)
 julio = Button(16)
 miguel = Button(20)
 pedro = Button(21)
-clockInOut.when_pressed = toggle(state)
+clockInOut.when_pressed = toggle()
 while True:
   while hotSwitch.is_active == True:
     print('Current state', state)
