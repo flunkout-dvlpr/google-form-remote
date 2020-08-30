@@ -18,8 +18,8 @@ while True:
   if clockInOut.is_pressed:
     print('toggle button')
     toggle(state)
-  while hotSwitch.is_active == True:
-    print('Current state', state)
+  # while hotSwitch.is_active == True:
+  #   print('Current state', state)
 # if clockInOut.is_active == True and julio.is_pressed:
 #   print('Julio clockIn')
 # if clockInOut.is_active == True and miguel.is_pressed:
