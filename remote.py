@@ -8,21 +8,18 @@ miguel = Button(20)
 pedro = Button(21)
 
 while True:
-  if clockInOut.value is True:
-    if julio.is_pressed:
-      print('Julio clockIn')
-    if miguel.is_pressed:
-      print('Miguel clockIn')
-    if pedro.is_pressed:
-      print('Pedro clockIn')
+  if clockInOut.is_active == True and julio.is_pressed:
+    print('Julio clockIn')
+  if clockInOut.is_active == True and miguel.is_pressed:
+    print('Miguel clockIn')
+  if clockInOut.is_active == True and pedro.is_pressed:
+    print('Pedro clockIn')
 
-  elif clockInOut.value is False:
-    #googleForm.submitClockOut('Julio')
-    if julio.is_pressed:
-      print('Julio clockOut')
-    if miguel.is_pressed:
-      print('Miguel clockOut')
-    if pedro.is_pressed:
-      print('Pedro clockOut')
+  if clockInOut.is_active == False and julio.is_pressed:
+    print('Julio clockIn')
+  if clockInOut.is_active == False and miguel.is_pressed:
+    print('Miguel clockIn')
+  if clockInOut.is_active == False and pedro.is_pressed:
+    print('Pedro clockIn')
 
 
