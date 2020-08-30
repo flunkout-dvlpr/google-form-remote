@@ -2,10 +2,10 @@ from gpiozero import Button
 import googleForm 
 
 hotSwitch = Button(26)
-clockInOut = Buton(19)
-julio = Buton(16)
-miguel = Buton(20)
-pedro = Buton(21)
+clockInOut = Button(19)
+julio = Button(16)
+miguel = Button(20)
+pedro = Button(21)
 
 while True:
   if True:
